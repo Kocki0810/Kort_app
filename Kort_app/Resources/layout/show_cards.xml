@@ -4,4 +4,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+        <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:minWidth="25px"
+        android:minHeight="25px">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+            <Button
+                android:text="Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_marginHorizontal="25px"
+                android:id="@+id/homepage" />
+            <Button
+                android:text="Bonner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25px"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/bon" />
+            <Button
+                android:text="Meddelser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25px"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/notifikation" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
 </LinearLayout>
